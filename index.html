@@ -7,7 +7,7 @@
   <meta name="description" content="Kevin Duffy - Web Developer Portfolio">
   <meta name="author" content="Kevin Duffy">
 
-  <meta property="og:title" content="Kevin Duffy – Web Developer">
+  <meta property="og:title" content="Kevin Duffy - Web Developer">
   <meta property="og:description" content="Kevin Duffy's Portfolio Website">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kevinduffy.dev">
@@ -18,6 +18,105 @@
   <title>Kevin Duffy</title>
 </head>
 <body>
-  <h1>Hello, I'm Kevin Duffy</h1>
+  <header>
+    <!-- I want kevin duffy and web developer on seperate lines but obviously together in the same spot, does it make sense to have a h1 and h2 then? -->
+    <h1>Kevin Duffy</h1>
+    <h2>Web Developer</h2>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <picture>
+      <img src="" alt="Picture of Kevin Duffy">
+    </picture>
+  </section>
+
+  <main>
+    <!-- This section would be a list of projects and small blurbs next to it -->
+    <section id="projects">
+      <article>
+        <figure>
+          <img src="" alt="Screenshot of website Milknthingzz">
+          <figcaption>
+            <a href="HTTPS://Milknthingzz.xyz">Milknthingzz.xyz</a>
+          </figcaption>
+          <p>
+            A project made to showcase arts and crafts my girlfriend, Achaea, has made. She is able to upload crafts and
+            organize by category and subcategory. Anyone can make an account to leave comments on their favorite crafts and
+            contact her if interested in any of her creations.
+          </p>
+        </figure>
+      </article>
+
+      <article>
+        <figure>
+          <img src="" alt="Screenshot of board game ratings site, name not chosen yet.">
+          <figcaption>
+            <a href="kevinduffy.dev/board-game-site" 
+            class="inactive-link"
+            aria-disabled="true"
+            tabindex="-1"
+            onclick="return false;">
+            Board Game Rankings
+            </a>
+          </figcaption>
+          <p>
+            A side project I made to learn more about APIs. This website allows me, family or close friends to rate board games.
+            When adding a board game, images and rating is pulled from BoardGameGeeks API.
+          </p>
+          <p>
+            Each game has several averages. My rating, friends and family rating, bgg rating, and users on my website rating.
+            Users can then look up games by highest or lowest rating by any of these categories.
+          </p>
+        </figure>
+      </article>
+
+      <article>
+        <figure>
+          <img src="" alt="Screenshot of side project worthy of being on my portfolio. Project not chosen yet.">
+          <figcaption>
+            <a href="#" 
+            class="inactive-link"
+            aria-disabled="true"
+            tabindex="-1"
+            onclick="return false;">
+            Project not chosen yet
+            </a>
+          </figcaption>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi labore minus, magni inventore dolorem repellat dolor 
+            quod rerum iusto tenetur sint quibusdam facilis qui quisquam amet voluptas ut consequuntur temporibus.
+          </p>
+        </figure>
+      </article>
+    </section>
+
+    <section id="hangman">
+      <h3>Play Hangman</h3>
+      <div id="hangman-game">
+        <p>I'll consider this if it doesn't affect my loading time too much.</p>
+        <p>Still, might just be 'cool' enough.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <address>
+      <p>Email: <a href="mailto:KevinDuffy615@gmail.com">KevinDuffy615@gmail.com</a></p>
+      <p>Youtube: <a href="">Maybe I link my youtube here, unsure.</a></p>
+    </address>
+    <p id="copyright">© Kevin Duffy 2025</p>
+    <div id="attributions">
+      <p>
+        <a href="https://www.kevinduffy.dev/portfolio/attributions">
+          Asset Credits &amp; Licenses
+        </a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
