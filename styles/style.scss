@@ -33,23 +33,35 @@ a {
   } 
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Raleway';
-}
-
-
 figure {
   text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway';
 }
 
 header {
   background-color: colors.$primary-color;
   border-bottom: 2px solid colors.$accent-color;
   box-shadow: 0 0 0 1px colors.$text-color;
+  width: 100%;
+  display: grid;
 
-  a {
-    color: colors.$secondary-color;
+  nav {
+    @include mixins.flexCenter(row);
+    gap: 10px;
+
+    a {
+      color: colors.$secondary-color;
+  
+      &:visited {
+        color: colors.$secondary-color;
+      }
+    }
   }
+
+
 }
 
 /* ID styles */
@@ -64,16 +76,18 @@ header {
 }
 
 .container {
-  padding: 0 10px;
   margin: auto;
   position: relative;
   width: 100%;
-  max-width: 450px;
 }
 
 .inactive-link {
   text-decoration: line-through;
   opacity: 0.6;
+}
+
+.name {
+  color: colors.$accent-color;
 }
 
 /*
@@ -91,13 +105,43 @@ header {
     }
   }
 
+  footer > * {
+    margin-bottom: 10px;
+  }
+
   header {
-    padding: 10px;
+    height: 125px;
+    padding: 5px 10px;
     margin-bottom: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "name name name"
+    "jobTitle jobTitle jobTitle"
+    "nav nav nav";
+
+    nav {
+      grid-area: nav;
+    }
+
+    .name {
+      grid-area: name;
+    }
+
+    .job-title {
+      grid-area: jobTitle;
+    }
   }
 
   section {
     margin-bottom: 40px;
+  }
+
+  #about {
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2rem
+    }
   }
 
   #hero {
@@ -115,10 +159,21 @@ header {
   }
 
   .container {
+    max-width: 450px;
+    padding: 0 10px;
+
     p {
       padding: 0 15px;
       margin-bottom: 10px;
     }
+  }
+
+  .job-title {
+    font-size: 1.5rem;
+  }
+
+  .name {
+    font-size: 3rem;
   }
 
   .website-screenshot {
