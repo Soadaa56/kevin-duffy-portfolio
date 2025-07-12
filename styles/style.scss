@@ -36,6 +36,16 @@ figure {
   text-align: center;
 }
 
+header {
+  background-color: colors.$primary-color;
+  border-bottom: 2px solid colors.$accent-color;
+  box-shadow: 0 0 0 1px colors.$text-color;
+
+  a {
+    color: colors.$secondary-color;
+  }
+}
+
 /* ID styles */
 
 /* Class Styles */
@@ -67,16 +77,43 @@ figure {
 /* Mobile */
 @media screen and (min-width: 0em) {
 
+  figure {
+    margin-bottom: 50px;
+
+    figcaption {
+      margin: 5px 0 10px 0;
+    }
+  }
+
+  header {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
   #hero {
-    text-align: right;
+    text-align: center;
     img {
       max-width: 200px;
     }
   }
 
-  // .container {
-  // max-width: 300px;
-  // }
+  #projects {
+    h1 {
+      margin-bottom: 40px;
+      font-size: 3em;
+    }
+  }
+
+  .container {
+    p {
+      padding: 0 15px;
+      margin-bottom: 10px;
+    }
+  }
 
   .website-screenshot {
     max-width: 250px;
