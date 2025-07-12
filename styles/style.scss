@@ -31,11 +31,20 @@ a {
     outline: 2px solid colors.$primary-color;
   } 
 }
+
+figure {
+  text-align: center;
+}
+
 /* ID styles */
 
 /* Class Styles */
 .accent-text {
   font-family: 'Raleway', 'Inter', sans-serif;
+}
+
+.center {
+  text-align: center;
 }
 
 .container {
@@ -59,19 +68,31 @@ a {
 @media screen and (min-width: 0em) {
 
   #hero {
+    text-align: right;
     img {
       max-width: 200px;
     }
   }
 
+  // .container {
+  // max-width: 300px;
+  // }
+
   .website-screenshot {
-    max-width: 200px;
+    max-width: 250px;
   }
 }
 
 /* Large Mobile */
 @media screen and (min-width: 25em) {
 
+  // .container {
+  //   max-width: 380px;
+  // }
+
+  .website-screenshot {
+    max-width: 320px;
+  }
 }
 
 /* Tablet */

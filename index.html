@@ -19,7 +19,6 @@
 </head>
 <body>
   <header>
-    <!-- I want kevin duffy and web developer on seperate lines but obviously together in the same spot, does it make sense to have a h1 and h2 then? -->
     <h2>Kevin Duffy</h2>
     <h4>Web Developer</h4>
     <nav>
@@ -32,14 +31,15 @@
   <section id="hero">
     <picture>
       <img src="/images/kevin-duffy-sample.jpg" 
-      alt="Picture of Kevin Duffy">
+      alt="Picture of Kevin Duffy"
+      class="hero-img">
     </picture>
   </section>
 
   <main>
-    <!-- This section would be a list of projects and small blurbs next to it -->
     <section id="projects">
-      <h1>Projects</h2>
+      <h1 class="center">Projects</h2>
+
       <article>
         <figure>
           <img src="/images/milknthingzz-screenshot.png" 
@@ -48,11 +48,16 @@
           <figcaption>
             <a href="HTTPS://Milknthingzz.xyz">Milknthingzz.xyz</a>
           </figcaption>
-          <p>
-            A project made to showcase arts and crafts my girlfriend, Achaea, has made. She is able to upload crafts and
-            organize by category and subcategory. Anyone can make an account to leave comments on their favorite crafts and
-            contact her if interested in any of her creations.
-          </p>
+          <div class="container">
+            <p>
+              A project made to showcase arts and crafts my girlfriend, Achaea, has made. She is able to upload crafts and
+              organize by category and subcategory.
+            </p>
+            <p>
+              Anyone can make an account to leave comments on their favorite crafts and
+              contact her if interested in any of her creations.
+            </p>
+          </div>
         </figure>
       </article>
 
@@ -68,14 +73,16 @@
             Board Game Rankings
             </a>
           </figcaption>
-          <p>
-            A side project I made to learn more about APIs. This website allows me, family or close friends to rate board games.
-            When adding a board game, images and rating is pulled from BoardGameGeeks API.
-          </p>
-          <p>
-            Each game has several averages. My rating, friends and family rating, bgg rating, and users on my website rating.
-            Users can then look up games by highest or lowest rating by any of these categories.
-          </p>
+          <div class="container">
+            <p>
+              A side project I made to learn more about APIs. This website allows me, family or close friends to rate board games.
+              When adding a board game, images and rating is pulled from BoardGameGeeks API.
+            </p>
+            <p>
+              Each game has several averages. My rating, friends and family rating, bgg rating, and users on my website rating.
+              Users can then look up games by highest or lowest rating by any of these categories.
+            </p>
+          </div>
         </figure>
       </article>
 
@@ -91,31 +98,35 @@
             Project not chosen yet
             </a>
           </figcaption>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi labore minus, magni inventore dolorem repellat dolor 
-            quod rerum iusto tenetur sint quibusdam facilis qui quisquam amet voluptas ut consequuntur temporibus.
-          </p>
+          <div class="container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi labore minus, magni inventore dolorem repellat dolor
+              quod rerum iusto tenetur sint quibusdam facilis qui quisquam amet voluptas ut consequuntur temporibus.
+            </p>
+          </div>
         </figure>
       </article>
     </section>
 
     <section id="hangman">
-      <h3>Play Hangman</h3>
+      <h3 class="center">Play Hangman</h3>
       <div id="hangman-game">
-        <p>I'll consider this if it doesn't affect my loading time too much.</p>
-        <p>Still, might just be 'cool' enough.</p>
+        <div class="container">
+          <p>I'll consider this if it doesn't affect my loading time too much.</p>
+          <p>Still, might just be 'cool' enough.</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer id="contact">
     <address>
-      <p>Email: <a href="mailto:KevinDuffy615@gmail.com">KevinDuffy615@gmail.com</a></p>
-      <p>Youtube: <a href="">Maybe I link my youtube here, unsure.</a></p>
+      <p class="center">Email: <a href="mailto:KevinDuffy615@gmail.com">KevinDuffy615@gmail.com</a></p>
+      <p class="center">Youtube: <a href="">Maybe I link my youtube here, unsure.</a></p>
     </address>
-    <p id="copyright">© Kevin Duffy 2025</p>
+    <p id="copyright" class="center">© Kevin Duffy 2025</p>
     <div id="attributions">
-      <p>
+      <p class="center">
         <a href="https://www.kevinduffy.dev/portfolio/attributions">
           Asset Credits &amp; Licenses
         </a>
