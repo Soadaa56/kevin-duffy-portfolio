@@ -81,6 +81,24 @@ header {
   width: 100%;
 }
 
+.hero-img {
+  filter: opacity(0.5);
+  min-width: 100vw;
+}
+
+.hero-inner {
+  position: relative;
+  margin-inline: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+}
+
 .inactive-link {
   text-decoration: line-through;
   opacity: 0.6;
@@ -112,7 +130,6 @@ header {
   header {
     height: 125px;
     padding: 5px 10px;
-    margin-bottom: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
@@ -166,6 +183,10 @@ header {
       padding: 0 15px;
       margin-bottom: 10px;
     }
+  }
+
+  .hero-text {
+    font-size: 1.75rem;
   }
 
   .job-title {
