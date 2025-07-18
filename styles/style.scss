@@ -18,18 +18,18 @@ body {
 /* Element tag styes */
 
 a {
-  color: colors.$primary-color;
+  color: colors.$text-color;
   font-family: 'Raleway';
 
   &:visited {
-    color: colors.$primary-color;
+    color: colors.$text-color;
   }
   &:hover,
   &:focus {
     color: colors.$accent-color;
   }
   &:focus {
-    outline: 2px solid colors.$primary-color;
+    outline: 1px solid colors.$primary-color;
   } 
 }
 
@@ -50,13 +50,11 @@ header {
 
   nav {
     @include mixins.flexCenter(row);
-    gap: 10px;
+    gap: 50px;
 
     a {
-      color: colors.$secondary-color;
-  
-      &:visited {
-        color: colors.$secondary-color;
+      &:focus {
+        outline: 1px solid colors.$accent-color;
       }
     }
   }
@@ -128,26 +126,8 @@ header {
   }
 
   header {
-    height: 125px;
+    height: 50px;
     padding: 5px 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "name name name"
-    "jobTitle jobTitle jobTitle"
-    "nav nav nav";
-
-    nav {
-      grid-area: nav;
-    }
-
-    .name {
-      grid-area: name;
-    }
-
-    .job-title {
-      grid-area: jobTitle;
-    }
   }
 
   section {
