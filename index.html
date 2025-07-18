@@ -49,12 +49,21 @@
   <main>
     <section id="projects">
       <h1 class="center">Projects</h1>
-
       <article>
         <figure>
-          <img src="/images/milknthingzz-screenshot.png" 
-          alt="Screenshot of website Milknthingzz"
-          class="website-screenshot">
+          <picture>
+            <source media="(min-width: 64em)" type="image/avif" srcset="/images/milknthingzz/milknthingzz-desktop.avif">
+            <!-- Maybe switch img src to screenshot of tablet -->
+            <source media="(min-width: 48em)" type="image/avif" srcset="/images/milknthingzz/milknthingzz-tablet.avif">
+            <!-- Should switch img src to a screenshot of mobile -->
+            <source media="(min-width: 25em)" type="image/avif" srcset="/images/milknthingzz/milknthingzz-mobile.avif">
+            <source media="(min-width: 0em)" type="image/avif" srcset="/images/milknthingzz/milknthingzz-mobile-small.avif">
+
+            <!-- Fallback image; resized -->
+            <img src="/images/milknthingzz/milknthingzz-backup-768x-256-color.png"
+            alt="Screenshot of website Milknthingzz"
+            class="website-screenshot">
+          </picture>
           <figcaption>
             <a href="HTTPS://Milknthingzz.xyz">Milknthingzz.xyz</a>
           </figcaption>
