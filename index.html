@@ -19,10 +19,6 @@
 </head>
 <body>
   <header>
-    <h2 class="name center">
-      <span class="first-name">Kevin</span> <span class="last-name">Duffy</span>
-    </h2>
-    <h4 class="job-title center">Web Developer</h4>
     <nav>
       <a href="#projects">Projects</a>
       <a href="#about">About Me</a>
@@ -31,11 +27,22 @@
   </header>
 
   <section id="hero">
-    <picture>
-      <img src="/images/kevin-duffy-sample.jpg" 
-      alt="Picture of Kevin Duffy"
-      class="hero-img">
-    </picture>
+    <div class="hero-inner">
+      <picture class="hero-img">
+        <source media="(min-width: 0em)" type="image/avif" srcset="/images/hero/hero-mobile-small.avif">
+        <source media="(min-width: 25em)" type="image/avif" srcset="/images/hero/hero-mobile.avif">
+        <source media="(min-width: 48em)" type="image/avif" srcset="/images/hero/hero-tablet.avif">
+        <source media="(min-width: 64em)" type="image/avif" srcset="/images/hero/hero-desktop.avif">
+
+        <!-- Fallback image; resized and compressed -->
+        <img src="/images/hero/hero-backup-768x-60q.jpg"
+        alt="Picture of Kevin Duffy">
+      </picture>
+      <div class="hero-text">
+        <h1><span class="hero-first-name">Kevin</span> <span class="hero-last-name">Duffy</span></h1>
+        <p>Web Developer</p>
+      </div>
+    </div>
   </section>
 
   <main>
