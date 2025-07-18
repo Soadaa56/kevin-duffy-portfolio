@@ -28,7 +28,7 @@
 
   <section id="hero">
     <div class="hero-inner">
-      <picture class="hero-img">
+      <picture>
         <source media="(min-width: 64em)" type="image/avif" srcset="/images/hero/hero-desktop.avif">
         <source media="(min-width: 48em)" type="image/avif" srcset="/images/hero/hero-tablet.avif">
         <source media="(min-width: 25em)" type="image/avif" srcset="/images/hero/hero-mobile.avif">
@@ -36,7 +36,8 @@
 
         <!-- Fallback image; resized and compressed -->
         <img src="/images/hero/hero-backup-768x-60q.jpg"
-        alt="Picture of Kevin Duffy">
+        alt="Picture of Kevin Duffy"
+        class="hero-img">
       </picture>
       <div class="hero-text">
         <h1><span class="hero-first-name">Kevin</span> <span class="hero-last-name">Duffy</span></h1>
