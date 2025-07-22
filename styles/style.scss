@@ -5,7 +5,8 @@
 /* Root level styles */
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
+  // overflow-y: auto;
 }
 
 html {
@@ -54,10 +55,13 @@ h1,h2,h3,h4,h5,h6 {
 header {
   background-color: colors.$primary-color;
   border-bottom: 0.75rem ridge colors.$primary-color;
-  box-shadow: 0 16px 20px 0px colors.$accent-color;
+  box-shadow: 0 1px 3px 0px colors.$accent-color;
   width: 100%;
   display: grid;
   text-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   nav {
     @include mixins.flexCenter(row);
