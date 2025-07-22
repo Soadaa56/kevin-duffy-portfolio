@@ -43,8 +43,8 @@ h1,h2,h3,h4,h5,h6 {
 
 header {
   background-color: colors.$primary-color;
-  border-bottom: 2px solid colors.$accent-color;
-  box-shadow: 0 0 0 1px colors.$text-color;
+  border-bottom: 0.75rem ridge colors.$primary-color;
+  box-shadow: 0 16px 20px 0px colors.$accent-color;
   width: 100%;
   display: grid;
 
@@ -61,7 +61,7 @@ header {
 }
 
 p {
-  text-align: left;
+  text-align: center;
 }
 
 /* ID styles */
@@ -211,7 +211,9 @@ p {
 
 /* Tablet */
 @media screen and (min-width: 48em) {
-  
+  p {
+    text-align: left;
+  }
 }
 
 /* Small Desktop */
