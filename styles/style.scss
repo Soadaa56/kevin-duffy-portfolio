@@ -57,10 +57,11 @@ header {
   box-shadow: 0 16px 20px 0px colors.$accent-color;
   width: 100%;
   display: grid;
+  text-wrap: nowrap;
 
   nav {
     @include mixins.flexCenter(row);
-    gap: 50px;
+    gap: 4rem;
 
     a {
       &:focus {
@@ -130,10 +131,13 @@ p {
 @media screen and (min-width: 0em) {
 
   figure {
-    margin-bottom: 50px;
 
     figcaption {
-      margin: 5px 0 10px 0;
+      margin: 1rem 0 5rem 0;
+    }
+    
+    p {
+      margin-top: 3rem;
     }
   }
 
@@ -148,7 +152,7 @@ p {
 
   section {
     article {
-      margin-bottom: 15rem;
+      margin-bottom: 25rem;
     }
   }
 
