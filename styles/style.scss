@@ -86,15 +86,11 @@ header {
 
 .hero-inner {
   position: relative;
-  margin-inline: auto;
 }
 
 .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-weight: 500;
+  position: absolute;
 }
 
 .inactive-link {
@@ -110,7 +106,10 @@ header {
       Media Queries
 */
 
-/* Mobile */
+/* Mobile Small 
+320px to 399px (not worried about screens below 320)
+*/
+
 @media screen and (min-width: 0em) {
 
   figure {
@@ -144,7 +143,9 @@ header {
   #hero {
     text-align: center;
     img {
-      max-width: 200px;
+      // Anything below 320px works, even 0.
+      // Below this size website starts to look weird.
+      max-width: 270px; // Anything below 320px works, even 0.
     }
   }
 
@@ -167,6 +168,13 @@ header {
 
   .hero-text {
     font-size: 1.75rem;
+    top: 0.75em;
+    left: 1em;
+    right: 1em;
+
+    h2 {
+      text-wrap: nowrap;
+    }
   }
 
   .job-title {
