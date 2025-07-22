@@ -58,8 +58,10 @@ header {
       }
     }
   }
+}
 
-
+p {
+  text-align: left;
 }
 
 /* ID styles */
@@ -67,6 +69,11 @@ header {
 /* Class Styles */
 .accent-text {
   font-family: 'Raleway', 'Inter', sans-serif;
+}
+
+.accent-text-bold {
+  font-family: 'Raleway', 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .center {
@@ -145,7 +152,7 @@ header {
     img {
       // Anything below 320px works, even 0.
       // Below this size website starts to look weird.
-      max-width: 270px; // Anything below 320px works, even 0.
+      max-width: 270px;
     }
   }
 
