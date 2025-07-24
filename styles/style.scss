@@ -2,7 +2,10 @@
 @use "colors";
 @use "mixins";
 
-/* Root level styles */
+/* #region General Styles
+*/
+
+// #region Root level styles
 html, body {
   max-width: 100%;
   // overflow-x: hidden;
@@ -16,13 +19,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* General level styles */
 body {
   color: colors.$text-color;
 }
 
-/* Element tag styes */
+// #endregion
 
+// #region Element tag styes
 a {
   color: colors.$accent-color;
   font-family: 'Raleway';
@@ -94,9 +97,13 @@ p {
   text-align: center;
 }
 
-/* ID styles */
+// #endregion
 
-/* Class Styles */
+// #region ID styles
+
+// #endregion
+
+// #region Class Styles
 .accent-font {
   font-family: 'Raleway', 'Inter', sans-serif;
 }
@@ -138,20 +145,19 @@ p {
 .name {
   color: colors.$accent-color;
 }
+// #endregion
 
-/*
-      Media Queries
+// #endregion
+
+/* #region Media Queries
 */
 
-/* Mobile Small 
-320px to 399px (not worried about screens below 320)
+/* #region Mobile Section
 */
+// #region Mobile Small 
+// 320px to 399px (not worried about screens below 320)
 
 @media screen and (min-width: 0em) {
-  :root {
-    --header-height: 80px;
-  }
-
   figure {
 
     figcaption {
@@ -168,7 +174,6 @@ p {
   }
 
   header {
-    // height: var(--header-height);
     padding: 12px 12px 4px 12px;
     gap: 1rem;
   }
@@ -199,7 +204,6 @@ p {
 
   #hero {
     text-align: center;
-    // padding-top: var(--header-height);
 
     img {
       // Anything below 320px works, even 0.
@@ -254,38 +258,98 @@ p {
     max-width: 250px;
   }
 }
+// #endregion
 
-/* Large Mobile */
+// #region Mobile
 @media screen and (min-width: 25em) {
 
   html {
-    // font-size: 18px;
+    font-size: 18px;
   }
 
-  // .container {
-  //   max-width: 380px;
-  // }
+  .container {
+    max-width: 500px;
+  }
 
   .website-screenshot {
     max-width: 380px;
   }
 }
 
-/* Tablet */
+// #endregion
+
+// #region Between Mobile - Large Mobile
+@media screen and (min-width: 30em) {
+  .hero-text {
+    padding-top: 1rem;
+  }
+}
+// #endregion
+
+// #region Large Mobile
+
+@media screen and (min-width: 38em) {
+  html {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 660px;
+  }
+
+  .website-screenshot {
+    max-width: 600px;
+  }
+}
+
+// #endregion
+
+// #region Between Large Mobile - Tablet
+@media screen and (min-width: 44em) {
+  .hero-text {
+    padding-top: 2rem;
+  }
+}
+
+// #endregion
+
+// #endregion
+
+/* #region Tablet Section
+*/
+
+// #region Tablet
 @media screen and (min-width: 48em) {
   p {
     text-align: left;
   }
 }
 
-/* Small Desktop */
+// #endregion
+
+// #endregion
+
+/* #region Desktop Queries
+*/
+
+// #region Small Desktop
 @media screen and (min-width: 64em) {
   html {
     font-size: 22px;
   }
 }
 
-/* Desktop */
+// #endregion
+
+// #region Desktop
 @media screen and (min-width: 1300px) {
 
 }
+
+// #endregion
+
+// #endregion
+
+// #endregion
+
+// EOD
