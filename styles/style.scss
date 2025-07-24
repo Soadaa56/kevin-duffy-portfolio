@@ -154,16 +154,15 @@ p {
 
 /* #region Mobile Section
 */
-// #region Mobile Small 
-// 320px to 399px (not worried about screens below 320)
 
+// #region Mobile Small - 320px
 @media screen and (min-width: 0em) {
-  figure {
+  figcaption {
+    margin: 2rem 0 5rem 0;
+    font-size: 1.4rem;
+  }
 
-    figcaption {
-      margin: 1rem 0 5rem 0;
-    }
-    
+  figure {
     p {
       margin-top: 3rem;
     }
@@ -180,6 +179,11 @@ p {
 
   nav {
     gap: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
 
   section {
@@ -217,7 +221,7 @@ p {
 
     h1 {
       margin-bottom: 5rem;
-      font-size: 4em;
+      font-size: 4rem;
     }
   }
 
@@ -233,9 +237,9 @@ p {
 
   .hero-text {
     font-size: 1.75rem;
-    top: 0.75em;
-    left: 1em;
-    right: 1em;
+    top: 0.75rem;
+    left: 1rem;
+    right: 1rem;
 
     h2 {
       text-wrap: nowrap;
@@ -260,7 +264,7 @@ p {
 }
 // #endregion
 
-// #region Mobile
+// #region Mobile - 400px
 @media screen and (min-width: 25em) {
 
   html {
@@ -278,23 +282,54 @@ p {
 
 // #endregion
 
-// #region Between Mobile - Large Mobile
+// #region Between Mobile to Large Mobile - 480px
 @media screen and (min-width: 30em) {
+  header {
+    height: 90px;
+  }
+
+  nav {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.75;
+  }
+
   .hero-text {
+    font-size: 2rem;
     padding-top: 1rem;
   }
 }
 // #endregion
 
-// #region Large Mobile
+// #region Large Mobile - 608px
 
 @media screen and (min-width: 38em) {
   html {
-    font-size: 20px;
+    font-size: 22px;
+  }
+
+  figcaption {
+    font-size: 2rem;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2;
   }
 
   .container {
     max-width: 660px;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
   }
 
   .website-screenshot {
@@ -304,7 +339,7 @@ p {
 
 // #endregion
 
-// #region Between Large Mobile - Tablet
+// #region Between Large Mobile to Tablet - 708px
 @media screen and (min-width: 44em) {
   .hero-text {
     padding-top: 2rem;
@@ -318,8 +353,11 @@ p {
 /* #region Tablet Section
 */
 
-// #region Tablet
+// #region Small Tablet -768px
 @media screen and (min-width: 48em) {
+  html {
+    font-size: 24px;
+  }
   p {
     text-align: left;
   }
@@ -329,13 +367,13 @@ p {
 
 // #endregion
 
-/* #region Desktop Queries
+/* #region Desktop Section
 */
 
-// #region Small Desktop
+// #region Small Desktop - 1024px
 @media screen and (min-width: 64em) {
   html {
-    font-size: 22px;
+    font-size: 26px;
   }
 }
 
