@@ -8,8 +8,8 @@
 // #region Root level styles
 html, body {
   max-width: 100%;
-  // overflow-x: hidden;
-  // overflow-y: auto;
+  overflow-x: hidden !important;
+  overflow-y: auto;
 }
 
 html {
@@ -21,6 +21,8 @@ html {
 
 body {
   color: colors.$text-color;
+  position: relative;
+  width: 100%;
 }
 
 // #endregion
@@ -65,21 +67,23 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 header {
-  // box-sizing: border-box;
   background-color: colors.$primary-color;
+  box-sizing: border-box;
   border-bottom: 8px ridge colors.$primary-color;
   box-shadow: 0 1px 3px 0px colors.$accent-color;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   text-wrap: nowrap;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;
 
-  // Consider scroll down hides nav
+  /* 
+  Consider scrolling down hides nav
+  */
   // transition: top 0.2 ease-in-out;
 
   nav {
@@ -108,7 +112,6 @@ p {
 // #endregion
 
 // #region ID styles
-
 // #endregion
 
 // #region Class Styles
@@ -181,7 +184,9 @@ p {
   }
 
   header {
-    padding: 12px 12px 4px 12px;
+    height: 60px;
+    font-size: 0.9rem;
+    padding: 4px 16px 0px 16px;
     gap: 2rem;
   }
 
@@ -279,6 +284,11 @@ p {
     font-size: 18px;
   }
 
+  header {
+    margin: 0 auto;
+    font-size: 1em;
+  }
+
   .container {
     max-width: 500px;
   }
@@ -292,13 +302,18 @@ p {
 
 // #region Between Mobile to Large Mobile - 480px
 @media screen and (min-width: 30em) {
-  header {
-    height: 90px;
+  html {
+    font-size: 19;
+
+    nav {
+      font-size: 1.2rem;
+    }
   }
 
-  nav {
-    font-size: 1.2rem;
-    // padding: 0 1rem;
+  header {
+    height: 90px;
+
+    padding: 4px 24px 0px 24px;
   }
 
   p {
@@ -325,7 +340,11 @@ p {
 
 @media screen and (min-width: 38em) {
   html {
-    font-size: 22px;
+    font-size: 20px;
+    
+    nav {
+      font-size: 1.5rem;
+    }
   }
 
   figcaption {
@@ -334,6 +353,10 @@ p {
 
   header {
     height: 100px;
+
+    nav {
+      gap: 2rem;
+    }
   }
 
   p {
