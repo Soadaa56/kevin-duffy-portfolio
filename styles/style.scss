@@ -154,7 +154,7 @@ p {
 /* #region Mobile Section
 */
 
-// #region Mobile Small - 320px
+// #region Mobile Small - 0em - 320px
 @media screen and (min-width: 0em) {
   figcaption {
     margin: 2rem 0 5rem 0;
@@ -209,17 +209,10 @@ p {
 
   #hero {
     text-align: center;
-    // box-shadow: 0.5rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
-    // border-radius: 0 0 15% 1%;
 
     img {
       // Anything below 320px works, even 0.
       max-width: 270px; // Below this size website starts to look weird.
-    }
-
-    .hero-inner {
-      // box-shadow: 0.5rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
-      // border-radius: 0 0 4% 2%;
     }
 
     .hero-img {
@@ -279,7 +272,7 @@ p {
 }
 // #endregion
 
-// #region Mobile - 400px
+// #region Mobile - 25em - 400px
 @media screen and (min-width: 25em) {
 
   html {
@@ -299,10 +292,9 @@ p {
     max-width: 380px;
   }
 }
-
 // #endregion
 
-// #region Between Mobile to Large Mobile - 480px
+// #region Between Mobile to Large Mobile - 30em - 480px
 @media screen and (min-width: 30em) {
   html {
     font-size: 19;
@@ -338,7 +330,7 @@ p {
 }
 // #endregion
 
-// #region Large Mobile - 608px
+// #region Large Mobile - 38em - 608px
 
 @media screen and (min-width: 38em) {
   html {
@@ -378,16 +370,14 @@ p {
     max-width: 600px;
   }
 }
-
 // #endregion
 
-// #region Between Large Mobile to Tablet - 708px
+// #region Between Large Mobile to Tablet - 44em - 708px
 @media screen and (min-width: 44em) {
   .hero-text {
     padding-top: 2rem;
   }
 }
-
 // #endregion
 
 // #endregion
@@ -395,7 +385,7 @@ p {
 /* #region Tablet Section
 */
 
-// #region Small Tablet -768px
+// #region Small Tablet - 48em - 768px
 @media screen and (min-width: 48em) {
   html {
     font-size: 24px;
@@ -418,7 +408,31 @@ p {
     }
   }
 }
+// #endregion
 
+// #region Tablet - 58em - 928px
+@media screen and (min-width: 58em) {
+  #hero {
+    margin-bottom: 10rem;
+
+    box-shadow: 
+      0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2),
+      -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 10% 10%;
+
+    .hero-img {
+      box-shadow: 1rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+      border-radius: 0 0 7% 7%;
+    }
+
+    .hero-inner {
+      box-shadow: 
+      0.4rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15),
+      -0.4rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+      border-radius: 0 0 2% 2%;
+    }
+  }
+}
 // #endregion
 
 // #endregion
@@ -426,7 +440,7 @@ p {
 /* #region Desktop Section
 */
 
-// #region Small Desktop - 1024px
+// #region Small Desktop - 64em - 1024px
 @media screen and (min-width: 64em) {
   html {
     font-size: 26px;
@@ -435,7 +449,7 @@ p {
 
 // #endregion
 
-// #region Desktop
+// #region Desktop - 1300px
 @media screen and (min-width: 1300px) {
 
 }
