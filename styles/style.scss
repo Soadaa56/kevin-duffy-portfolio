@@ -48,7 +48,6 @@ figure {
 
 footer {
   background-color: colors.$primary-color;
-  // padding: 1rem 0;
   height: 100vh;
   @include mixins.flexCenter(column);
 
@@ -398,6 +397,7 @@ p {
 
   #hero {
     .hero-img {
+      width: 100%;
       min-width: 100px;
       max-width: 900px;
       height: auto;
