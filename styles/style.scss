@@ -95,14 +95,6 @@ header {
       }
     }
   }
-
-  .header-container {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    position: sticky;
-    top: 0;
-  }
 }
 
 p {
@@ -160,9 +152,8 @@ p {
 
 // #endregion
 
-/* #region Media Queries
+/* #region All Media Queries
 */
-
 /* #region Mobile Section
 */
 
