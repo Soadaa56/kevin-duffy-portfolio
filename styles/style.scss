@@ -209,10 +209,22 @@ p {
 
   #hero {
     text-align: center;
+    // box-shadow: 0.5rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    // border-radius: 0 0 15% 1%;
 
     img {
       // Anything below 320px works, even 0.
       max-width: 270px; // Below this size website starts to look weird.
+    }
+
+    .hero-inner {
+      // box-shadow: 0.5rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+      // border-radius: 0 0 4% 2%;
+    }
+
+    .hero-img {
+      box-shadow: 1rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+      border-radius: 0 0 7% 2%;
     }
   }
 
@@ -261,6 +273,8 @@ p {
 
   .website-screenshot {
     max-width: 250px;
+    box-shadow: 1rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 7% 1%;
   }
 }
 // #endregion
