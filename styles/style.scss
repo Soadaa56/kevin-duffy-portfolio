@@ -434,23 +434,24 @@ p {
 }
 // #endregion
 
-// #endregion
-
-/* #region Desktop Section
-*/
-
-// #region Small Desktop - 64em - 1024px
+// #region Large Tablet - 64em - 1024px
 @media screen and (min-width: 64em) {
   html {
     font-size: 26px;
   }
 }
+// #endregion
 
 // #endregion
 
+/* #region Desktop Section
+*/
+
 // #region Desktop - 1300px
 @media screen and (min-width: 1300px) {
-
+  html {
+    font-size: 28px;
+  }
 }
 
 // #endregion
