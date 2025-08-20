@@ -394,10 +394,6 @@ p {
     padding: 1rem;
   }
 
-  p {
-    text-align: left;
-  }
-
   #hero {
     .hero-img {
       width: 100%;
@@ -438,6 +434,10 @@ p {
 @media screen and (min-width: 64em) {
   html {
     font-size: 26px;
+  }
+
+  p {
+    text-align: left;
   }
 }
 // #endregion
