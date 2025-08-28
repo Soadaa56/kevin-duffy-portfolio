@@ -145,6 +145,11 @@ p {
 .name {
   color: colors.$accent-color;
 }
+
+.title {
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+}
 // #endregion
 
 // #endregion
@@ -279,6 +284,17 @@ p {
     font-size: 3rem;
   }
 
+  .upcoming-projects-title {
+    span {
+      display: block;
+    }
+
+    span:last-child {
+      text-decoration: underline;
+      text-underline-offset: 0.25em;
+    }
+  }
+
   .website-screenshot {
     max-width: 250px;
     box-shadow: 1rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
@@ -382,7 +398,7 @@ p {
   }
 
   .website-screenshot {
-    max-width: 600px;
+    max-width: 550px;
   }
 }
 // #endregion
