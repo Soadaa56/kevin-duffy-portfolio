@@ -131,7 +131,17 @@
 
       <article>
         <figure>
-          <img src="" alt="Screenshot of side project worthy of being on my portfolio. Project not chosen yet.">
+          <picture>
+            <source media="(min-width: 64em)" type="image/avif" srcset="images/inventory-app/inventory-app-desktop.avif">
+            <source media="(min-width: 48em)" type="image/avif" srcset="images/inventory-app/inventory-app-tablet.avif">
+            <source media="(min-width: 25em)" type="image/avif" srcset="images/inventory-app/inventory-app-mobile.avif">
+            <source media="(min-width: 0em)" type="image/avif" srcset="images/inventory-app/inventory-app-mobile-small.avif">
+
+            <!-- Fallback Image -->
+            <img src="./images/inventory-app/inventory-app-screenshot-768.jpg" 
+            alt="Screenshot of inventory management app project"
+            class="website-screenshot">
+          </picture>
           <figcaption>
             <a href="https://github.com/Soadaa56/Inventory-application-grocer-nodejs" 
             class=""
