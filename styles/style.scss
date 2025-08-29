@@ -297,6 +297,10 @@ p {
     color: colors.$secondary-color;
   }
 
+  .github-icon {
+    max-width: 32px;
+  }
+
   .incremental-list {
     list-style-type: disc;
     font-size: 1.2rem;
