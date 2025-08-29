@@ -154,6 +154,25 @@ p {
   text-decoration: underline;
   text-underline-offset: 0.28em;
 }
+
+.typewriter span {
+  font-family: monospace;
+  overflow: hidden;
+  margin-inline: auto;
+  white-space: nowrap;
+  border-right: 1px solid;
+  display: inline-block;
+  animation: typing 4s steps(13) forwards, blink 2s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 13ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
 // #endregion
 
 // #endregion
@@ -272,6 +291,12 @@ p {
     }
   }
 
+  .home-icon-container svg {
+    width: 96px;
+    height: 64px;
+    color: colors.$secondary-color;
+  }
+
   .incremental-list {
     list-style-type: disc;
     font-size: 1.2rem;
@@ -285,10 +310,6 @@ p {
 
   .job-title {
     font-size: 1.5rem;
-  }
-
-  .logo-image {
-    max-width: 35px;
   }
 
   .name {
