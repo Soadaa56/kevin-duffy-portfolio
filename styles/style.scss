@@ -27,15 +27,15 @@ body {
 
 // #region Element tag styes
 a {
-  color: colors.$accent-color;
+  color: colors.$secondary-color;
   font-family: 'Raleway';
 
   &:visited {
-    color: colors.$accent-color;
+    color: colors.$secondary-color;
   }
   &:hover,
   &:focus {
-    color: colors.$accent-color;
+    color: colors.$secondary-color;
   }
   &:focus {
     outline: 1px solid colors.$primary-color;
@@ -115,6 +115,10 @@ p {
 
 .center {
   text-align: center;
+}
+
+.colors-secondary {
+  color: colors.$secondary-color;
 }
 
 .container {
@@ -471,6 +475,14 @@ p {
   p {
     text-align: left;
   }
+
+  .container {
+    max-width: 900px;
+  }
+
+  .website-screenshot {
+    max-width: 800px;
+  }
 }
 // #endregion
 
@@ -483,6 +495,14 @@ p {
 @media screen and (min-width: 1300px) {
   html {
     font-size: 28px;
+  }
+
+  .container {
+    max-width: 60vw;
+  }
+
+  .website-screenshot {
+    max-width: 1080px;
   }
 }
 
