@@ -57,8 +57,7 @@ footer {
     height: 50vh;
     padding-top: 20vh;
 
-    div {
-      margin-top: 2rem;
+    & > * {
       margin-bottom: 2rem;
     }
   }
